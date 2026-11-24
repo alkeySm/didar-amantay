@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: didar-amantay-portal
+    runtime: docker
+    plan: free
+    envVars:
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        value: didar2026
+      - key: JWT_SECRET
+        generateValue: true

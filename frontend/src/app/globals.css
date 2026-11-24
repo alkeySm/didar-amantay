@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf7f2;
+  color: #18181b;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* Subtle Kazakh geometric editorial divider pattern */
+.kazakh-border-pattern {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(154, 107, 50, 0.28) 0px,
+    rgba(154, 107, 50, 0.28) 12px,
+    transparent 12px,
+    transparent 18px,
+    rgba(154, 107, 50, 0.14) 18px,
+    rgba(154, 107, 50, 0.14) 24px,
+    transparent 24px,
+    transparent 30px
+  );
+  height: 2px;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ece1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7b8a1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9a6b32;
+}

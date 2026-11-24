@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" fill="none">
+  <rect width="800" height="540" fill="#1B2228"/>
+  <rect x="38" y="38" width="724" height="464" stroke="#9A6B32" stroke-width="1.2" opacity="0.45"/>
+  <g fill="#252E36" stroke="#9A6B32" stroke-width="1.5">
+    <rect x="95" y="130" width="610" height="220" rx="8"/>
+    <circle cx="250" cy="240" r="64" fill="#171D22"/>
+    <circle cx="250" cy="240" r="18" fill="#9A6B32"/>
+    <circle cx="550" cy="240" r="64" fill="#171D22"/>
+    <circle cx="550" cy="240" r="18" fill="#9A6B32"/>
+  </g>
+  <line x1="250" y1="176" x2="550" y2="176" stroke="#D4B483" stroke-width="2" opacity="0.6"/>
+  <line x1="250" y1="304" x2="550" y2="304" stroke="#D4B483" stroke-width="2" opacity="0.6"/>
+  <text x="400" y="415" text-anchor="middle" fill="#FAF7F2" font-family="Georgia, serif" font-size="25" letter-spacing="2">ҚАЗАҚФИЛЬМ • КИНОДРАМАТУРГИЯ</text>
+  <text x="400" y="445" text-anchor="middle" fill="#D4B483" font-family="sans-serif" font-size="13" letter-spacing="3">ГӘККУ • А-ҒА ОРАЛУ • ДЕРЕКТІ ФИЛЬМДЕР</text>
+</svg>

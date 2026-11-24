@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E2B37"/>
+      <stop offset="55%" stop-color="#384D5C"/>
+      <stop offset="100%" stop-color="#C89B62"/>
+    </linearGradient>
+    <linearGradient id="mount" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22303B"/>
+      <stop offset="100%" stop-color="#131B22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="540" fill="url(#sky)"/>
+  <circle cx="620" cy="140" r="46" fill="#F6E6C9" opacity="0.88"/>
+  <path d="M0 370 L140 240 L250 310 L380 185 L510 295 L650 215 L800 330 L800 540 L0 540 Z" fill="#2A3945" opacity="0.72"/>
+  <path d="M0 410 L180 285 L310 355 L465 225 L600 325 L740 265 L800 315 L800 540 L0 540 Z" fill="url(#mount)"/>
+  <g stroke="#9A6B32" stroke-width="1.5" opacity="0.45">
+    <path d="M40 40 H760 V500 H40 Z"/>
+    <path d="M52 52 H748 V488 H52 Z"/>
+  </g>
+  <text x="64" y="458" fill="#FAF7F2" font-family="Georgia, serif" font-size="24" letter-spacing="2">ҚАРҚАРАЛЫ БАСЫНДА</text>
+  <text x="64" y="482" fill="#D4B483" font-family="sans-serif" font-size="13" letter-spacing="3">SARYARQA • KARKARALY HILLS • 1969</text>
+</svg>
