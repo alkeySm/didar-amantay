@@ -20,5 +20,5 @@ if ! lsof -iTCP:3000 -sTCP:LISTEN -P -n >/dev/null 2>&1; then
 fi
 
 sleep 2
-echo "Opening Cloudflare Quick Tunnel..."
-exec "$ROOT_DIR/bin/cloudflared" tunnel --protocol http2 --url http://127.0.0.1:3000
+echo "Opening public HTTPS tunnel via localhost.run..."
+exec ssh -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=30 -R 80:127.0.0.1:3000 nokey@localhost.run
