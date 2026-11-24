@@ -1,8 +1,7 @@
 FROM node:22-bookworm-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1 \
-    NODE_ENV=production
+    PYTHONUNBUFFERED=1
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 python3-venv python3-pip ca-certificates \
@@ -22,10 +21,12 @@ RUN mkdir -p /app/backend/data /app/backend/uploads \
 # Frontend setup & production build
 COPY frontend/package*.json /app/frontend/
 WORKDIR /app/frontend
-RUN npm install --no-audit --no-fund
+RUN npm install --include=dev --no-audit --no-fund
 
 COPY frontend /app/frontend
 RUN BACKEND_URL=http://127.0.0.1:8000 npm run build
+
+ENV NODE_ENV=production
 
 WORKDIR /app
 COPY docker-entrypoint.sh /app/docker-entrypoint.sh
